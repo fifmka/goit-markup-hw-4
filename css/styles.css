@@ -25,7 +25,7 @@ body{
     margin: 0;
 }
 .conteiner{
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -33,6 +33,7 @@ body{
 .photo{
     display: block;
 }
+
 /* Логотип header*/
 .header-logo{
     margin-right: 93px;
@@ -167,6 +168,10 @@ body{
     letter-spacing: 0.06em;
 }
 /* Секції Загальні налаштування*/
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .section .section-text{
     color: var(--paragraph-color);
 }
@@ -197,22 +202,13 @@ body{
 
     background-color: var(--additional-background-color);
 }
-.specialty .icon{
-    
-}
-.specialty .item-svg{
 
-}
 .specialty .item:not(:last-child){
     margin-right: 30px;
 }
 .section-title.specialty{
     margin-bottom: 10px;
     text-transform: uppercase;
-}
-.section.specialty {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 /* Роботи */
@@ -224,11 +220,10 @@ body{
     margin-right: 30px;
 }
 .section.works{
-    padding-bottom: 94px;
+padding-top: 0;
 }
 .works .section-title{
     margin-bottom: 50px;
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -236,18 +231,9 @@ body{
 }
 
 /* Команда */
-.team .list{
-    display: flex;
-    justify-content: center;
-}
-.team .item:not(:last-child){
-    margin-right: 30px;
-}
 
 .team.section{
     background-color: var(--additional-background-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 .team .section-title{
     margin-bottom: 50px;
@@ -256,6 +242,14 @@ body{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+}
+.team .list {
+    display: flex;
+    justify-content: center;
+}
+
+.team .item:not(:last-child) {
+    margin-right: 30px;
 }
 .team .team-member{
     padding-top: 30px;
@@ -275,6 +269,61 @@ body{
     line-height: 1.19;
     text-align: center;
 }
+.social-networks .link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    color: #AFB1B8;
+}
+.social-networks .link:hover,
+.social-networks .link:focus{
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+
+.list .icon{
+    fill: currentColor;
+}
+
+/* .list .icon:hover,
+.list .icon:focus {
+    fill: var(--white-text-color); 
+} */
+
+/* Клієнти */
+.clients-title{
+margin-top: 0;
+margin-bottom: 50px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+
+.clients-item .link{
+    display: inline-block;
+    min-width: 170px;
+    border: 1px solid #AFB1B8;
+    padding: 16px 32px;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+
+.clients-item .icon {
+    display: block;
+    fill: currentColor;
+}
+.clients-item .link:hover, 
+.clients-item .link:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+
+
+
 /* Підвал */
 .footer{
     padding-top: 60px;
@@ -364,9 +413,8 @@ body{
     padding-bottom: 20px;
     padding-right: 24px;
     padding-left: 24px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 .projects .title{
     margin-top: 0px;
