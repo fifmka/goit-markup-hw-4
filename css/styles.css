@@ -130,7 +130,8 @@ body {
 .nav-link.current{
     color: var(--accent-color);
 }
-.nav-link:hover, .list-nav .link:focus{
+.nav-link:hover,
+.nav-link:focus{
     color: var(--accent-color);
 }
 
@@ -155,7 +156,8 @@ body {
     letter-spacing: 0.02em;
     
 }
-.contacts-link:hover, .contacts .link:focus{
+.contacts-link:hover,
+.contacts-link:focus{
     color: var(--accent-color);
 }
 .contacts-icon {
@@ -245,13 +247,14 @@ font-weight: 700;
 
     min-height: 120px;
     margin-bottom: 30px;
-    
+    border-radius: 4px;
     background-color: var(--additional-background-color);
 }
 
+
 .specialty-title{
     margin-bottom: 10px;
-
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -323,11 +326,12 @@ padding-top: 0;
     justify-content: center;
 }
 .member-link {
-    display: block;
+    display: flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
     color: #AFB1B8;
 }
 .member-link:hover,
@@ -437,12 +441,14 @@ padding-top: 0;
 .networks-list {
     display: flex;
     gap: 10px;
+
 }
 .networks-link {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
-    padding: 12px;
     border-radius: 50%;
     fill: var(--white-text-color);
     background-color: rgba(255, 255, 255, 0.1);
